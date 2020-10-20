@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightcolor"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Hospital Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Registration No"
+            android:maxLines="1"
+            android:padding="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_no"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:hint="Location"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="20sp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:hint="Landmark/Building"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="20sp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Address"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:hint="Area"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="20sp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cityr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Area"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:hint="City"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="20sp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cityr"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:hint="password"
+            android:padding="20sp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:digits="0123456789"
+            android:hint="Pincode"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:padding="20sp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pincode"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:digits="0123456789"
+            android:hint="Contact"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="20sp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/specialist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:hint="Speciality"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="20sp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/specialist"
+            android:layout_marginLeft="15dp"
+            android:text="Manager"
+            android:padding="20dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/manager"
+            />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/manager"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttons"
+            android:padding="20dp"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+</ScrollView>
